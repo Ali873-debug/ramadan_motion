@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/const_outer"
+    android:background="#1C153A"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="0.25dp"
+        android:layout_height="250dp"
+        android:rotation="180"
+        android:background="#2EFFFFFF"
+        android:layout_marginStart="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/moon1"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/vector"
+        app:layout_constraintTop_toBottomOf="@id/line1"
+        app:layout_constraintStart_toStartOf="@id/line1"
+        app:layout_constraintEnd_toEndOf="@id/line1"/>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="0.25dp"
+        android:layout_height="200dp"
+        android:rotation="180"
+        android:background="#2EFFFFFF"
+        android:layout_marginStart="60dp"
+        app:layout_constraintStart_toEndOf="@id/line1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/star1"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/vector"
+        app:layout_constraintTop_toBottomOf="@id/line2"
+        app:layout_constraintStart_toStartOf="@id/line2"
+        app:layout_constraintEnd_toEndOf="@id/line2"/>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="0.25dp"
+        android:layout_height="180dp"
+        android:rotation="180"
+        android:background="#2EFFFFFF"
+        android:layout_marginStart="60dp"
+        app:layout_constraintStart_toEndOf="@id/line2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/star2"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/vector"
+        app:layout_constraintTop_toBottomOf="@id/line3"
+        app:layout_constraintStart_toStartOf="@id/line3"
+        app:layout_constraintEnd_toEndOf="@id/line3"/>
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="0.25dp"
+        android:layout_height="200dp"
+        android:rotation="180"
+        android:background="#2EFFFFFF"
+        android:layout_marginStart="60dp"
+        app:layout_constraintStart_toEndOf="@id/line3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/star3"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/vector"
+        app:layout_constraintTop_toBottomOf="@id/line4"
+        app:layout_constraintStart_toStartOf="@id/line4"
+        app:layout_constraintEnd_toEndOf="@id/line4"/>
+
+    <View
+        android:id="@+id/line5"
+        android:layout_width="0.25dp"
+        android:layout_height="180dp"
+        android:rotation="180"
+        android:background="#2EFFFFFF"
+        android:layout_marginStart="60dp"
+        app:layout_constraintStart_toEndOf="@id/line4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/star4"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/vector"
+        app:layout_constraintTop_toBottomOf="@id/line5"
+        app:layout_constraintStart_toStartOf="@id/line5"
+        app:layout_constraintEnd_toEndOf="@id/line5"/>
+
+    <View
+        android:id="@+id/line6"
+        android:layout_width="0.25dp"
+        android:layout_height="250dp"
+        android:rotation="180"
+        android:background="#2EFFFFFF"
+        android:layout_marginStart="60dp"
+        app:layout_constraintStart_toEndOf="@id/line5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/moon2"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/vector"
+        app:layout_constraintTop_toBottomOf="@id/line6"
+        app:layout_constraintStart_toStartOf="@id/line6"
+        app:layout_constraintEnd_toEndOf="@id/line6"/>
+    
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@id/home"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:src="@drawable/home"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/moon_home"
+        app:layout_constraintStart_toStartOf="@id/moon_home"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/moon_home"
+        android:layout_width="300dp"
+        android:layout_height="280dp"
+        android:src="@drawable/moon"
+        android:rotation="-25"
+        android:layout_marginBottom="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/ramadan_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/cherry_cream_soda"
+        android:text="@string/ramdanKarem"
+        android:textSize="32sp"
+        android:textColor="#DEFFFFFF"
+        app:layout_constraintEnd_toEndOf="@id/home"
+        app:layout_constraintStart_toStartOf="@id/home"
+        app:layout_constraintTop_toTopOf="@id/moon_home" />
+
+
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
